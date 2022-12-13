@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #flex-container{
+            display: flex;
+            flex-direction: row;
+
+        }
+        .flex-items{
+            width: 400px;
+            height: 300px;
+            margin: 10px;
+            border: 2px solid black;background-color: cornflowerblue;
+
+        }
+        #my_button{
+            margin-left: 20px;
+            font-size: 20px;
+            background-color: pink;
+            border-radius: 15%;
+        }
+    </style>
+</head>
+<body>
+    <h3>Q. 1 Write the code to access element which is having id as "text"</h3>
+    <p id="my_text"></p>
+    <pre>
+    let myText = document.getElementById('my_text')
+    console.log(myText);
+    </pre>
+<hr>
+<h3>Q. 2 Write the code to access element which is having tag as "h1"</h3>
+
+    <pre>
+    let myHeading = document.getElementsByTagName('h1')
+    console.log(myHeading);
+    </pre>
+    <h1>Hello</h1>
+<hr>
+<h3>Q. 3 Write the code to access element which is having class as "box"</h3>
+
+<div class="box">
+
+</div>
+<pre>let myBox = document.getElementsByClassName('box')</pre>
+console.log(myBox);
+<hr>
+<h3>Q. 4 Change the heading from ""Hello"" to ""Hello World"" using DOM functions"</h3>
+
+<h1 id="hello_text">Hello</h1>
+<pre>
+    let changeContent = document.querySelector('#hello_text').textContent = 'Hello World'
+    console.log(changeContent);
+</pre>
+<hr>
+<h3>Q. 5 Create three cards on HTML page and arrange them using flex property in row or horizontal direction and 
+    also create button at the bottom named "Change Flex direction". When user clicks on this button, the cards arrangement should be changed to vertical direction.
+</h3>
+<div id="flex-container">
+    <div class="flex-items"></div>
+    <div class="flex-items"></div>
+    <div class="flex-items"></div>
+</div>
+<button type="submit" onclick="myButtonClick()" id="my_button">click me</button>
+<hr>
+<h3>Q. 6 What is the difference between window vs document?</h3>
+<p>Ans. window --> The window object is the topmost object of the DOM hierarchy. It represents a browser window or
+frame that displays the contents of the webpage. Whenever a window appears on the screen to display the contents of
+the document, the window object is created. <br>
+document --> The document object represent a web page that is loaded in the browser. By accessing the document 
+object, we can access the element in the HTML page.</p>
+
+<script src="./main.js"></script>
+</body>
+</html>
