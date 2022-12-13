@@ -27,3 +27,10 @@ function myButtonClick(){
         myFlex.style.flexDirection = 'row'
     }
 }
+
+// Q . 7
+
+function myHeading(){
+    document.querySelector('h2').style.color = 'red';
+    document.querySelector('h2').setAttribute('id','heading') ;
+}
