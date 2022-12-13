@@ -41,3 +41,30 @@ function changeContent(){
 }
 
 
+// Q. 9
+
+function time(){
+    let date = new Date();
+    let hours = date.getHours();
+    let mins = date.getMinutes();
+    let secs = date.getSeconds();
+
+    if( hours > 12 ){
+        hours = hours - 12 ;
+    }
+
+    document.getElementById('hr').innerText = hours + " hr";
+    document.getElementById('min').innerText = mins + " min";
+    document.getElementById('sec').innerText = secs + " sec" ;
+
+}
+
+setInterval(time, 1000);
+
+
+// Q. 10
+function getOption() {
+    let selectElement = document.querySelector('#select1');
+    let output = selectElement.value;
+    console.log(output);
+}

@@ -24,6 +24,9 @@
             background-color: pink;
             border-radius: 15%;
         }
+        .timer_boxes{
+            border: 2px solid black;
+        }
     </style>
 </head>
 <body>
@@ -90,6 +93,22 @@ user will click on this button page content should be changed to "Welcome to Ele
 <button id="replace"  onclick = 'changeContent()'>Replace text.</button>
 <hr>
 <h3>Q. 9 </h3>
+<h3>Timer Clock below </h3>
+
+<span id="hr" class="timer_boxes">HR : </span>
+<span id = "min" class="timer_boxes">MIN : </span>
+<span id="sec" class="timer_boxes">SEC : </span>
+<hr>
+<h3>Q. 10 </h3>
+<h4>Select year : </h4>
+<select id="select1" onchange="getOption()">
+    <option value="2020-2021">2020-2021</option>
+    <option value="2021-2022">2021-2022</option>
+    <option value="2022-2023">2022-2023</option>
+</select>
+
+    <p id="selectedYearValue">Selected Year is : </p>
+
 
 <script src="./main.js"></script>
 </body>
