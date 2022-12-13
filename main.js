@@ -10,14 +10,14 @@ let myBox = document.getElementsByClassName('box')
 console.log(myBox);
 
 // Q.4
-let changeContent = document.querySelector('#hello_text').textContent = 'Hello World'
-console.log(changeContent);
+let changeContent1 = document.querySelector('#hello_text').textContent = 'Hello World'
+console.log(changeContent1);
 
 
 // Q.5
-document.querySelector('button').addEventListener('click', (e) =>{
-    e.preventDefault()
-})
+// document.querySelector('button').addEventListener('click', (e) =>{
+//     e.preventDefault()
+// })
 function myButtonClick(){
     
     var myFlex = document.querySelector('#flex-container')
@@ -30,7 +30,14 @@ function myButtonClick(){
 
 // Q . 7
 
-function myHeading(){
-    document.querySelector('h2').style.color = 'red';
-    document.querySelector('h2').setAttribute('id','heading') ;
+
+document.querySelector('h1').style.color = 'red';
+document.querySelector('h1').setAttribute('id','heading') ;
+
+// Q. 8
+
+function changeContent(){
+    document.getElementById('changeText').innerText='WELCOME TO ELEVATION ACADEMY'
 }
+
+
